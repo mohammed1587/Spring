@@ -16,7 +16,6 @@ public interface UtilisateurService {
 
   UtilisateurDto findByEmail(String email);
 
-  //UtilisateurDto changerMotDePasse(ChangerMotDePasseUtilisateurDto dto);
 
 
 }
