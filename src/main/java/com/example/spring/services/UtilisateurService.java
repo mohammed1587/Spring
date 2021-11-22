@@ -4,8 +4,9 @@ import com.example.spring.dto.UtilisateurDto;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
- public interface UtilisateurService {
+public interface UtilisateurService {
 
   UtilisateurDto save(UtilisateurDto dto);
 
@@ -15,7 +16,7 @@ import java.util.List;
 
   void delete(Integer id);
 
-  UtilisateurDto findByEmail(String email);
+   UtilisateurDto findByEmail(String email);
 
 
 
