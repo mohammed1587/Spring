@@ -1,10 +1,11 @@
 package com.example.spring.services;
 
 import com.example.spring.dto.UtilisateurDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-public interface UtilisateurService {
+ public interface UtilisateurService {
 
   UtilisateurDto save(UtilisateurDto dto);
 

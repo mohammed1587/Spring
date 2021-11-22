@@ -41,6 +41,11 @@
             <version>3.0.0</version>
         </dependency>
         <dependency>
+        <groupId>io.springfox</groupId>
+        <artifactId>springfox-boot-starter</artifactId>
+        <version>3.0.0</version>
+    </dependency>
+        <dependency>
         <groupId>com.flickr4java</groupId>
         <artifactId>flickr4java</artifactId>
         <version>3.0.6</version>

@@ -1,8 +1,10 @@
 package com.example.spring.services;
 
  import com.example.spring.dto.EntrepriseDto;
+ import org.springframework.stereotype.Service;
 
  import java.util.List;
+
 
 public interface EntrepriseService {
 

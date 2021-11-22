@@ -1,5 +1,7 @@
 package com.example.spring.controller;
 
+
+
 import com.example.spring.controller.api.ArticleApi;
 import com.example.spring.dto.ArticleDto;
 import com.example.spring.services.ArticleService;
@@ -11,31 +13,37 @@ import java.util.List;
 @RestController
 public class ArticleController implements ArticleApi {
 
-    @Autowired
-    private ArticleService articleService;
+  private ArticleService articleService;
 
-    @Override
-    public ArticleDto save(ArticleDto articleDto) {
-        return articleService.save(articleDto);
-    }
+  @Autowired
+  public ArticleController(
+      ArticleService articleService
+  ) {
+    this.articleService = articleService;
+  }
 
-    @Override
-    public ArticleDto findById(Integer id) {
-        return articleService.findById(id);
-    }
+  @Override
+  public ArticleDto save(ArticleDto dto) {
+    return articleService.save(dto);
+  }
 
-    @Override
-    public ArticleDto findByCodeArticle(String codeArticle) {
-        return articleService.findByCodeArticle(codeArticle);
-    }
+  @Override
+  public ArticleDto findById(Integer id) {
+    return articleService.findById(id);
+  }
 
-    @Override
-    public List<ArticleDto> findAll() {
-        return articleService.findAll();
-    }
+  @Override
+  public ArticleDto findByCodeArticle(String codeArticle) {
+    return articleService.findByCodeArticle(codeArticle);
+  }
 
-    @Override
-    public void delete(Integer id) {
-           articleService.delete(id);
-    }
+  @Override
+  public List<ArticleDto> findAll() {
+    return articleService.findAll();
+  }
+
+  @Override
+  public void delete(Integer id) {
+    articleService.delete(id);
+  }
 }
