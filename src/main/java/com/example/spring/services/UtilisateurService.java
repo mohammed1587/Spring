@@ -1,8 +1,10 @@
 package com.example.spring.services;
 
 import com.example.spring.dto.UtilisateurDto;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UtilisateurService {
 
@@ -14,7 +16,7 @@ public interface UtilisateurService {
 
   void delete(Integer id);
 
-  UtilisateurDto findByEmail(String email);
+   UtilisateurDto findByEmail(String email);
 
 
 
